@@ -1,0 +1,165 @@
+//import org.junit.Assert;
+ 2	  	
+ //import static org.junit.Assert.*;
+ 3	  	
+ //import org.junit.Before;
+ 4	  	
+ import org.junit.Test;
+ 5	  	
+ /** CentralizedDBTest.
+ 6	  	
+ */
+ 7	  	
+ 
+ 8	  	
+ public class CentralizedDBTest {
+ 9	  	
+ 
+ 10	  	
+ 
+ 11	  	
+    /** Fixture initialization (common initialization
+ 12	  	
+     *  for all tests). **/
+ 13	  	
+    //@Before public void setUp() {
+ 14	  	
+    //}
+ 15	  	
+ 
+ 16	  	
+ 
+ 17	  	
+    /** A test that always fails. **/
+ 18	  	
+    //@Test public void defaultTest() {
+ 19	  	
+       //Assert.assertEquals("Default test added by jGRASP. Delete "
+ 20	  	
+          //   + "this test once you have added your own.", 0, 1);
+ 21	  	
+    //}
+ 22	  	
+    
+ 23	  	
+    /** getLicenseTest.
+ 24	  	
+    */
+ 25	  	
+    
+ 26	  	
+    @Test public void getLicenseTest() {
+ 27	  	
+       CentralizedDB db1 = new CentralizedDB("Database One",
+ 28	  	
+          1200.0, 5.00, 1500.0);
+ 29	  	
+       db1.setLicense(1500.0);
+ 30	  	
+       db1.getLicense();
+ 31	  	
+    }
+ 32	  	
+    
+ 33	  	
+    /** monthlyCostTest.
+ 34	  	
+    */
+ 35	  	
+    
+ 36	  	
+    @Test public void monthlyCostTest() {
+ 37	  	
+       CentralizedDB db1 = new CentralizedDB("Database One",
+ 38	  	
+          1200.0, 5.00, 1500.0);
+ 39	  	
+       db1.getLicense();
+ 40	  	
+       db1.monthlyCost();
+ 41	  	
+    }
+ 42	  	
+    
+ 43	  	
+    /** toStringTest.
+ 44	  	
+    */
+ 45	  	
+       
+ 46	  	
+    @Test public void toStringTest() {
+ 47	  	
+       CentralizedDB db1 = new CentralizedDB("Database One",
+ 48	  	
+          1200.0, 5.00, 1500.0);
+ 49	  	
+       db1.toString();
+ 50	  	
+    }
+ 51	  	
+    
+ 52	  	
+    /** getName.
+ 53	  	
+    */
+ 54	  	
+    
+ 55	  	
+    @Test public void getName() {
+ 56	  	
+       CentralizedDB db1 = new CentralizedDB("Database One",
+ 57	  	
+          1200.0, 5.00, 1500.0);
+ 58	  	
+       db1.getName();
+ 59	  	
+       db1.setName("CAT");
+ 60	  	
+    
+ 61	  	
+    }
+ 62	  	
+    
+ 63	  	
+    /** setBaseCost. */
+ 64	  	
+    
+ 65	  	
+    @Test public void setBaseCost() {
+ 66	  	
+       CentralizedDB db1 = new CentralizedDB("Database One",
+ 67	  	
+          1200.0, 5.00, 1500.0);
+ 68	  	
+       db1.setBaseCost(12.0);
+ 69	  	
+       db1.setDbStorage(10.0);
+ 70	  	
+    
+ 71	  	
+    }
+ 72	  	
+    
+ 73	  	
+    /** getCount. */
+ 74	  	
+    
+ 75	  	
+    @Test public void getCount() {
+ 76	  	
+       CentralizedDB db1 = new CentralizedDB("Database One",
+ 77	  	
+          1200.0, 5.00, 1500.0);
+ 78	  	
+       db1.getCount();
+ 79	  	
+       db1.resetCount();
+ 80	  	
+       
+ 81	  	
+    
+ 82	  	
+    }
+ 83	  	
+ }
