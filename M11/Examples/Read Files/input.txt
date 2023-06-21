@@ -1,3 +1,0 @@
-This is a file that contains text.
-Its extension is txt.
-It is probably opened using a text editor by default.
